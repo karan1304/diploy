@@ -1,0 +1,105 @@
+.topbar
+{
+    width: 100%;
+    border-bottom:2px solid rgba(47, 79, 79, 0.26);
+    margin:0;
+    padding:0;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 998;
+}
+
+.topbarContainer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+}
+
+.logo
+{
+    width:170px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    .menu
+    {
+        width:25px;
+        height: 25px;
+        img
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.logo > img
+{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.signcartcontact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.btn
+{
+    padding:10px 20px;
+    height:40px;
+    background-color: white;
+    border:none;
+    outline:none;
+    border:2px solid black;
+    font-size:14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    cursor:pointer;
+    .btnIcon
+    {
+        width:20px;
+        height: 20px;
+    }
+}
+
+// .signup
+// {
+//     background-color: #000000;
+//     color:#ffffff;
+// }
+
+.signup {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #000000; /* Default background color */
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border:2px solid black;
+    background: linear-gradient(135deg, #ffffff 50%, #000000 50%);
+    background-size: 300% 300%; /* Initially bigger than the button */
+    background-position: 100% 100%; /* Start at bottom right */
+    transition: background-position 0.9s ease-in-out, background-size 1.2s ease-in-out;
+}
+
+.signup:hover {
+    border:2px solid black;
+    background-size: 220% 220%; /* Shrinks the gradient for diagonal effect */
+    background-position: 0 0; /* Shift to top left */
+    color:#000000;
+}

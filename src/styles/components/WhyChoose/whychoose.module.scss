@@ -1,0 +1,272 @@
+.WhyChoose
+{
+    width:100%;
+    height: 100%;
+    padding:35px 0;
+    margin:0;
+    font-family: "Roboto", sans-serif;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    font-size:4rem;
+    font-weight: 500;
+    color:#212121;
+}
+
+.WhyChooseContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left,.right
+    {
+        width: 50%;
+    }
+
+    .left
+    {
+        padding:45px 25px;
+        .imageContainer
+        {
+            width:100%;
+            height: 100%;
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+    .right
+    {
+        padding:45px 25px;
+        .listContainer
+        {
+            list-style: none;
+            // border:1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap:20px;
+            flex-direction: column;
+            div
+            {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                border-left: 5px solid orange;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                padding:0px 10px;
+                gap:5px;
+            }
+            .title
+            {
+                font-size:1.6rem;
+                color:#111111;
+                font-weight: 400;
+            }
+            .description
+            {
+                font-size:1rem;
+                font-weight: 300;
+                color:#212121;
+            }
+        }
+    }
+
+}
+
+
+@media screen and ( max-width: 1324px) and  (min-width: 1024px ) 
+{
+    .heading
+    {
+        font-size:3.7rem;
+    }
+    .WhyChooseContainer
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+        // padding:50px 25px;
+        .right
+        {
+            
+            div
+            {
+                .title
+                {
+                    font-size:1rem;
+                }
+                .description
+                {
+                    font-size:0.95rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and ( max-width: 1024px) and  (min-width: 767px )    
+{
+    .heading
+    {
+        font-size:3.4rem;
+    }
+    .WhyChooseContainer
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+        .left
+        {
+            height: 90vh;
+            padding:45px 0;
+            
+        }
+        .right
+        {
+            padding:45px 15px;
+            .listContainer
+            {
+                div
+                {
+                    
+                    .title
+                    {
+                        font-size:1.2rem
+                    }
+                    .description
+                    {
+                        font-size:0.85rem;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) 
+{
+    .heading
+        {
+            font-size:3.4rem;
+        }
+    .WhyChooseContainer
+    {
+        flex-direction: column;
+
+        .left,.right
+        {
+            width:100%;
+            padding:0px 25px;
+        }
+        .right
+        {
+            .listContainer
+            {
+                .title
+                {
+                    font-size:1.5rem;
+                }
+                
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 600px)
+{
+    .heading
+        {
+            font-size:2.8rem;
+        }
+    .WhyChooseContainer
+    {
+        .left,.right
+        {
+            padding:0px;
+        }
+        
+        .right
+        {
+            .listContainer
+            {
+                .title
+                {
+                    font-size:1.4rem;
+                }
+                .description
+                {
+                    font-size:0.95rem;
+                }
+                
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 400px) 
+{
+    .heading
+        {
+            font-size:2.2rem;
+        }
+    .WhyChooseContainer
+    {
+        
+        .left
+        {
+            padding:0;
+        }
+        .right
+        {
+            padding:0;
+            .listContainer
+            {
+                .title
+                {
+                    font-size:1.3rem;
+                }
+                .description
+                {
+                    font-size:0.89rem;
+                }
+                
+            }
+        }
+    }      
+}
+
+
+@media screen and (max-width: 300px) 
+{
+    .WhyChooseContainer
+    {
+        .right
+        {
+            .listContainer
+            {
+                .title
+                {
+                    font-size:1.2rem;
+                }
+                .description
+                {
+                    font-size:0.82rem;
+                }
+                
+            }
+        }
+    }      
+}
+

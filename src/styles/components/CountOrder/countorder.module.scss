@@ -1,0 +1,66 @@
+.countorder
+{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:35px 0;
+    background-color: #faf6ef;
+}
+.countorderContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+    .box
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .num
+        {
+            font-size:1.9rem;
+            font-weight: 400;
+            color:#212121
+        }
+
+        .desc
+        {
+            font-size:1.8rem;
+            font-weight: 350;
+            text-align: center;
+            color:#212121;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .countorderContainer
+    {
+        .box
+        {
+            .num
+            {
+                font-size:1.5rem;
+            }
+            .desc
+            {
+            font-size:1.1rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:550px)
+{
+    .countorderContainer
+    {
+        flex-direction: column;
+    }   
+}
