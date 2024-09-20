@@ -2,77 +2,12 @@ import React from 'react'
 import styles from "../../styles/components/Footer/footer.module.scss";
 import Container from '../Container/Container';
 import SVG from "../../assets/images/index.js"
+import { coldata, icons} from '../../Constraints/index.js';
 
 const Footer = () => {
-    const icons = [
-        {image:SVG.Instagram},
-        {image:SVG.Facebook},
-        {image:SVG.YouTube},
-        {image:SVG.Linkedin},
-        {image:SVG.TikTok},
-    ]
+    
 
-    const coldata = 
-    [
-        {
-            heading:'Print on demand',
-            data:['What is print on demand?',
-                'Product catalog',
-                "Shipping and delivery",
-                "Dropshipping products",
-                "Pro sellers",
-                "White label products",
-                "Returns policy",
-                "Global, yet local",
-                "Sustainability",
-                "Support",]
-        },
-        {
-            heading:'Integrations',
-            data:[ "Shopify",
-                "Etsy",
-                "WooCommerce",
-                "Wix",
-                "Squarespace",
-                "BigCommerce",
-                "API",]
-           
-        },
-        {
-            heading:'Start selling',
-            data:["Embroidery",
-                "Print on demand t-shirts",
-                "Print on demand hoodies",
-                "Print on demand posters",
-                "Print on demand canvas",
-                "Print on demand calendars",
-                "Print on demand mugs",
-                "Custom products",
-                "Custom clothing",
-                "Custom merchandise",
-                "Custom phone cases",
-                "Print on demand Europe",
-                "Print on demand UK",
-                "Print on demand France",
-                "Print on demand Canada",
-                "Merch maker",]
-            
-        },
-        {
-            heading:'Company',
-            data:["GelatoConnect",
-                "About Gelato",
-                "Leadership team",
-                "Board & investors",
-                "Newsroom",
-                "Blog",
-                "Customer Stories",
-                "Partners",
-                "Careers",
-                "Affiliates program",]
-            
-        },
-    ]
+    
   return (
     <div className={styles.footer}>
         <Container>
